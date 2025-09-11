@@ -1,0 +1,193 @@
+/* ================================================================== */
+/* TEMA FUTURISTA E MELHORIAS DE UX - V5 (Com Responsividade)         */
+/* ================================================================== */
+
+/* --- 1. Variáveis Globais e Estilo Base --- */
+:root {
+  --futuristic-gradient: linear-gradient(90deg, hsla(245, 60%, 50%, 1) 0%, hsla(275, 70%, 50%, 1) 100%);
+  --md-typeset-line-height: 1.7; 
+}
+
+/* --- 2. Cabeçalho (Header) e Rodapé (Footer) --- */
+.md-header, .md-footer-nav {
+  background: var(--futuristic-gradient);
+}
+.md-header .md-title, .md-header .md-icon, .md-social__link {
+  color: white; 
+}
+.md-tabs {
+  background-color: hsla(245, 40%, 15%, 1);
+}
+.md-footer-meta {
+  background-color: hsla(245, 40%, 10%, 1);
+}
+
+/* --- 3. SOLUÇÃO DEFINITIVA PARA COR DE TODOS OS ÍCONES --- */
+/* Regra para o MODO CLARO */
+.md-header__button.md-logo img,
+.md-header .md-social .md-icon, 
+.md-tabs__link img,
+.md-nav__link img,
+.card h3 img {
+  filter: invert(31%) sepia(51%) saturate(1475%) hue-rotate(211deg) brightness(88%) contrast(89%);
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+/* Regra para o MODO ESCURO */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img,
+[data-md-color-scheme="slate"] .md-header .md-social .md-icon,
+[data-md-color-scheme="slate"] .md-tabs__link img, 
+[data-md-color-scheme="slate"] .md-nav__link img, 
+[data-md-color-scheme="slate"] .card h3 img {
+  filter: invert(79%) sepia(21%) saturate(996%) hue-rotate(189deg) brightness(90%) contrast(85%);
+}
+/* Efeitos de Hover */
+.md-header__button.md-logo:hover img,
+.md-social__link:hover .md-icon,
+.md-nav__link:hover img {
+  transform: scale(1.15); 
+}
+.md-logo{
+  width: auto; height: 40px; padding: 0; margin-right: 0.5rem; 
+}
+
+/* --- 4. Melhorias Visuais nos Componentes --- */
+.md-typeset .admonition {
+  border-left-width: 0.2rem;
+  border-image: linear-gradient(to bottom, hsla(245, 60%, 50%, 0.8), hsla(180, 100%, 50%, 0.8)) 1;
+  border-radius: 0.2rem;
+}
+
+/* --- 5. CARTÕES DE NAVEGAÇÃO (Homepage) --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0;
+}
+.card {
+  display: flex; flex-direction: column; text-decoration: none;
+  color: var(--md-default-fg-color);
+  background-color: var(--md-default-bg-color); 
+  border-radius: 0.5rem; padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: all 0.2s ease-in-out;
+}
+.card:hover, .card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 35px hsla(var(--md-primary-hue), 70%, 40%, 0.4);
+  border-color: var(--md-primary-fg-color);
+}
+.card h3 {
+  margin-top: 0; color: var(--md-primary-fg-color); font-weight: 700;
+  display: flex; align-items: center; border-bottom: none;
+  background: -webkit-linear-gradient(45deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card h3 img {
+  vertical-align: middle; margin-right: 0.75rem;
+  -webkit-text-fill-color: initial;
+}
+.card p {
+  color: var(--md-default-fg-color--light); font-size: 0.9rem;
+  line-height: 1.5; flex-grow: 1;
+}
+
+/* --- 6. ESTILOS PARA O QUIZ INTERATIVO (MODO CLARO E ESCURO) --- */
+.quiz-container {
+    background-color: var(--md-default-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.5rem; padding: 1.5rem; margin-top: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.quiz-container h3 {
+    margin-top: 0; border-bottom: 2px solid var(--md-primary-fg-color); padding-bottom: 0.5rem;
+}
+.question-block { margin: 1.5rem 0; }
+.question-text { font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; }
+.options { list-style-type: none; padding: 0; margin: 0; }
+.options li { margin: 0.7rem 0; padding: 0.5rem; border-radius: 0.3rem; border: 1px solid transparent; transition: all 0.2s ease-in-out; }
+.options label { display: block; cursor: pointer; }
+.options input { margin-right: 0.8rem; }
+.explanation { display: none; margin-top: 1rem; padding: 0.8rem; border-left: 4px solid #4CAF50; background-color: hsla(120, 50%, 95%, 1); font-size: 0.9rem; border-radius: 0 0.3rem 0.3rem 0; }
+.explanation strong { color: #2E7D32; }
+.options li.correct { background-color: #E8F5E9; border-color: #4CAF50; font-weight: bold; }
+.options li.incorrect { background-color: #FFEBEE; border-color: #F44336; text-decoration: line-through; opacity: 0.7; }
+#submit-quiz-btn { background-color: var(--md-primary-fg-color); color: var(--md-primary-bg-color); border: none; padding: 0.8rem 1.5rem; border-radius: 0.3rem; font-weight: bold; font-size: 1rem; cursor: pointer; transition: all 0.2s ease-in-out; }
+#submit-quiz-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px hsla(var(--md-primary-hue), 50%, 40%, 0.3); }
+#quiz-results { font-size: 1.3rem; font-weight: bold; margin-top: 1.5rem; padding: 1.2rem; border-radius: 0.3rem; text-align: center; }
+#quiz-results.success { background-color: #E8F5E9; border: 1px solid #4CAF50; color: #2E7D32; }
+#quiz-results.fail { background-color: #FFEBEE; border: 1px solid #F44336; color: #C62828; }
+[data-md-color-scheme="slate"] .explanation { background-color: hsla(120, 25%, 15%, 0.5); border-left-color: #66BB6A; }
+[data-md-color-scheme="slate"] .explanation strong { color: #A5D6A7; }
+[data-md-color-scheme="slate"] .options li.correct { background-color: hsla(120, 25%, 15%, 0.7); border-color: #66BB6A; }
+[data-md-color-scheme="slate"] .options li.incorrect { background-color: hsla(0, 30%, 20%, 0.7); border-color: #EF5350; opacity: 0.6; }
+[data-md-color-scheme="slate"] #quiz-results.success { background-color: hsla(120, 25%, 15%, 1); border-color: #66BB6A; color: #A5D6A7; }
+[data-md-color-scheme="slate"] #quiz-results.fail { background-color: hsla(0, 30%, 15%, 1); border-color: #EF5350; color: #FFCDD2; }
+
+/* ================================================================== */
+/* 7. RESPONSIVIDADE PARA TELAS PEQUENAS (MÓVEL)                    */
+/* ================================================================== */
+@media screen and (max-width: 768px) {
+  /* Reduz o preenchimento dos cartões na homepage */
+  .card {
+    padding: 1rem;
+  }
+  
+  /* Reduz o preenchimento e os tamanhos de fonte do quiz */
+  .quiz-container {
+    padding: 1rem;
+  }
+  
+  .question-text {
+    font-size: 1rem;
+  }
+  
+  #quiz-results {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}
+/* ================================================================== */
+/* 8. ESTILOS PARA OS BOTÕES DO QUIZ                                  */
+/* ================================================================== */
+
+/* Botão de Ação Primária (Verificar) */
+.submit-quiz-btn {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    border: 2px solid transparent; /* Borda transparente para manter o tamanho consistente com o botão de refazer */
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-quiz-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px hsla(var(--md-primary-hue), 50%, 40%, 0.3);
+}
+
+/* Botão de Ação Secundária (Refazer) - Estilo "Fantasma" */
+.redo-quiz-btn {
+    background-color: transparent;
+    color: var(--md-primary-fg-color);
+    border: 2px solid var(--md-primary-fg-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.redo-quiz-btn:hover {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px hsla(var(--md-primary-hue), 50%, 40%, 0.3);
+}

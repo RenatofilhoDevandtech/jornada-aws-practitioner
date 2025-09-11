@@ -1,0 +1,249 @@
+# ================================================================= #
+#        MKDOCS.YML - VERSÃO OTIMIZADA E ESTRUTURADA               #
+# ================================================================= #
+site_name: Jornada AWS Cloud Practitioner
+site_author: Renato Filho
+site_description: "Portfólio completo de estudos e laboratórios práticos para a certificação AWS Cloud Practitioner, desenvolvido no programa AWS re/Start."
+
+# Repositório
+repo_url: https://github.com/SEU_USUARIO/jornada-aws-practitioner
+repo_name: GitHub
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: |
+  &copy; 2025 Renato Filho - Conteúdo licenciado sob 
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+    CC BY-NC-SA 4.0
+  </a>
+
+# Tema e Visual
+theme:
+  name: material
+  language: pt
+  logo: assets/logo-aws.png
+  favicon: assets/logo-aws.png
+
+  # Paleta "Synthwave" Futurista (Azul/Roxo)
+  palette:
+    - scheme: slate # Modo escuro como padrão
+      primary: "indigo"
+      accent: "purple"
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo claro
+    - scheme: default
+      primary: "indigo"
+      accent: "purple"
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo escuro
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+
+  # Barra de Anúncio no topo do site
+  announcement_bar:
+    content: |
+      <a href="https://linkedin.com/in/SEU_PERFIL" target="_blank">:fontawesome-brands-linkedin: Conecte-se comigo no LinkedIn!</a>
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - mkdocs_quiz:
+      quiz_file: quizzes.json
+      language: pt
+      show_score: true
+      show_progress_bar: true
+      show_indice_on_answer: true
+      show_refresh_button: true
+
+# Extensões do Markdown
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      # Habilita a criação de diagramas com Mermaid.js
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# Seção de extras
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RenatofilhoDevandtech
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/renato-filho-devandtech
+
+# CSS/JS customizados
+extra_css:
+  - css/extra.css
+extra_javascript:
+  - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+
+# Navegação (Estrutura completa, organizada e com ícones)
+nav:
+  - '<img src="https://api.iconify.design/mdi/home.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Início': "index.md"
+
+  - '<img src="https://api.iconify.design/mdi/cloud-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Fundamentos da Cloud':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/compass-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral': "01_Cloud_Foundations/index.md"
+          - '<img src="https://api.iconify.design/mdi/lightbulb-on-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Conceitos Basicos': "01_Cloud_Foundations/01_Conceitos_Basicos/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Funções de Uma Equipe': "01_Cloud_Foundations/02_Funcoes_de_Uma_Equipe_de_Nuvem/index.md"
+          - '<img src="https://api.iconify.design/mdi/briefcase-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Funções na Nuvem': "01_Cloud_Foundations/03_Funcoes_na_Nuvem/index.md"
+          - '<img src="https://api.iconify.design/mdi/rocket-launch-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Vantagens da Nuvem': "01_Cloud_Foundations/04_Vantagen_da_Computacao_em_Nuvem/index.md"
+          - '<img src="https://api.iconify.design/logos/aws.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> O que é a AWS?': "01_Cloud_Foundations/05_Aws_Cloud/index.md"
+          - '<img src="https://api.iconify.design/mdi/calculator-variant-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Preços na AWS': "01_Cloud_Foundations/06_Definindo_Preco_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/earth.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Infraestrutura Global': "01_Cloud_Foundations/07_Infraestrutura_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/toolbox-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Serviços e Categorias': "01_Cloud_Foundations/08_Categorias_e_Servicos_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-half-full.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Modelo de Responsabilidade': "01_Cloud_Foundations/09_Responsabilidade_Compartilhada_Aws/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-s3.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon S3': "01_Cloud_Foundations/10_S3_Aws/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-ec2.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon EC2': "01_Cloud_Foundations/11_EC2_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/arrow-expand-all.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Elastic Compute': "01_Cloud_Foundations/12_Elastic_Compute_Aws/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Console AWS': "01_Cloud_Foundations/labs/09_Lab_Conhecendo_Console_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab calculator': "01_Cloud_Foundations/labs/10_Lab_Estimativa_Gastos/index.md"
+          - '<img src="https://api.iconify.design/mdi/cloud-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab EC2': "01_Cloud_Foundations/labs/11_Lab_Amazon_EC2/index.md" 
+          - '<img src="https://api.iconify.design/mdi/archive-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab S3': "01_Cloud_Foundations/labs/12_Lab_Amazon_S3/index.md"
+          - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab IAM ': "01_Cloud_Foundations/labs/13_Lab_IAM/index.md"
+          - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Pensando como Arquiteto ': "01_Cloud_Foundations/labs/14_Lab_Pensando_como_Arquiteto/index.md"
+      - 'Quiz conhecimentos em Cloud': 'quizzes/quiz_cloud.md'
+
+  - '<img src="https://api.iconify.design/mdi/linux.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Linux':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/compass-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Introdução ao Linux': "02_Linux/01_Introducao_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/console.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Comandos Essenciais': "02_Linux/02_Comandos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Usuários e Grupos': "02_Linux/03_Usuarios_e_Grupos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-edit-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Editando Arquivos': "02_Linux/04_Editar_Arquivos_no_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/folder-text-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Sistema de Arquivos': "02_Linux/05_Trabalhando_Sistemas_de_Arquivos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-document-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Manipulando Arquivos': "02_Linux/06_Trabalhando_com_Arquivos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-lock-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciando Permissões': "02_Linux/07_Gerenciar_Permissoes_Arquivos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/memory.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciando Processos': "02_Linux/08_Gerenciar_Processos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/cog-play-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciando Serviços': "02_Linux/09_Gerenciar_Servicos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/package-variant-closed.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciamento de Software': "02_Linux/10_Gerenciamento_de_Softaware/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-chart-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciando Logs': "02_Linux/11_Gerenciar_Arquivos_de_Log/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-chart-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Trabalhando com Comandos Linux': "02_Linux/12_Trabalhando_Comandos_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/bash.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Shell Bash': "02_Linux/13_Shell_Bash_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/script-text-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Scripts em Shell': "02_Linux/14_Scripts_Shell_Bash/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/console.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab Intro Linux': "02_Linux/labs/01_Lab_Introducao_Linux/index.md"
+          - '<img src="https://api.iconify.design/mdi/console-line.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab Linha de Comando': "02_Linux/labs/02_Lab_Linha_de_Comando/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab Detetive na Nuvem ': "02_Linux/labs/03_Lab_Detetive_Na_Nuvem/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab comando linux ': "02_Linux/labs/04_Lab_Comandos_Linux/index.md"
+          - 'Quiz conhecimentos em Linux': 'quizzes/quiz_linux.md'
+
+  - '<img src="https://api.iconify.design/mdi/lan.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Redes':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Introdução a Redes': "03_Redes/01_Introducao_a_Redes/index.md"
+          - '<img src="https://api.iconify.design/mdi/ip-network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Conceitos de Redes': "03_Redes/02_Conceitos_de_Redes/index.md"
+          - '<img src="https://api.iconify.design/mdi/earth.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Protocolos de Internet': "03_Redes/03_Protocolos_de_Internet/index.md"
+          - '<img src="https://api.iconify.design/mdi/cloud-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Redes na Nuvem AWS': "03_Redes/04_Redes_na_Nuvem_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/gate.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon VPC': "03_Redes/05_Amazon_VPC/index.md"
+          - '<img src="https://api.iconify.design/mdi/ip.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Sub-rede e IP': "03_Redes/06_Subrede_IP/index.md"
+          - '<img src="https://api.iconify.design/mdi/protocol.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Protocolos Adicionais': "03_Redes/07_Protocolos_de_Redes_Adicionais/index.md"
+          - '<img src="https://api.iconify.design/mdi/router-network.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Tecnologias Adicionais': "03_Redes/08_Tecnologias_de_Redes_Adicionais/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/ip-network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> IP Público/Privado': "03_Redes/labs/261_Lab_IP_Publico_Privado/index.md"
+          - '<img src="https://api.iconify.design/mdi/web.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Criar VPC e WebServer': "03_Redes/labs/267_Lab_Criar_VPC_e_WebServer/index.md"
+          - 'Quiz conhecimentos em Redes': 'quizzes/quiz_redes.md'
+
+  - '<img src="https://api.iconify.design/mdi/shield-account-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Segurança':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/shield-lock-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Introdução à Segurança': "04_Seguranca/01_Introducao_a_seguranca/index.md"
+          - '<img src="https://api.iconify.design/mdi/file-document-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Exemplos de Política': "04_Seguranca/02_Exemplos_de_Politica/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Ciclo de Vida: Prevenção': "04_Seguranca/03_Ciclo_de_Vida_Seguraca_Prevencao/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Reforço de Rede': "04_Seguranca/04_Prevencao_Reforco_de_Rede/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Reforço de Sistema': "04_Seguranca/05_Prevencao_Reforco_de_Sistema/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-file-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Reforço de Dados': "04_Seguranca/06_Prevencao_Reforco_de_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-link-variant-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Reforço de Infraestrutura': "04_Seguranca/07_Prevencao_Reforco_de_Infraestrutura/index.md"
+          - '<img src="https://api.iconify.design/mdi/certificate-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Demo: AWS Certificate Manager': "04_Seguranca/08_Demosntracao_Amazon_ACM/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-key-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciamento de Identidade': "04_Seguranca/09_Prevencao_Gerenciamento_Indentidade/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-iam.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Prevenção com IAM': "04_Seguranca/10_Prevencao_IAM/index.md"
+          - '<img src="https://api.iconify.design/mdi/magnify-scan.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Detecção': "04_Seguranca/11_Deteccao/index.md"
+          - '<img src="https://api.iconify.design/mdi/wall-fire.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Firewall e Malware': "04_Seguranca/12_Firewall_Malware/index.md"
+          - '<img src="https://api.iconify.design/mdi/shoe-print.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS CloudTrail': "04_Seguranca/13_Aws_Cloudtrail/index.md"
+          - '<img src="https://api.iconify.design/mdi/cog-box.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Config': "04_Seguranca/14_Aws_Config/index.md"
+          - '<img src="https://api.iconify.design/mdi/siren-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Resposta a Incidentes': "04_Seguranca/15_Resposta/index.md"
+          - '<img src="https://api.iconify.design/mdi/chart-bar.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Análise': "04_Seguranca/16_Analise/index.md"
+          - '<img src="https://api.iconify.design/mdi/account-check-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Trusted Advisor': "04_Seguranca/17_Aws_Trusted_Advisor/index.md"
+          - '<img src="https://api.iconify.design/mdi/check-decagram-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Práticas Recomendadas': "04_Seguranca/18_Praticas_Recomendadas_de_Segurança/index.md"
+          - '<img src="https://api.iconify.design/mdi/gavel.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Conformidade e Segurança': "04_Seguranca/19_Conformidade_de_Seguranca_da_Aws/index.md"
+          - '<img src="https://api.iconify.design/mdi/security.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Recursos de Segurança': "04_Seguranca/20_Recursos_de_Seguranca_Aws/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/shield-lock-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Segurança': "04_Seguranca/labs/335_Lab_Seguranca/index.md"
+          - 'Quiz conhecimentos em Segurança': 'quizzes/quiz_seguranca.md'
+
+  - '<img src="https://api.iconify.design/mdi/language-python.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Python':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/book-open-page-variant-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Introdução ao Python': "05_Python/01_Introducao_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/code-braces.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Programação com Python': "05_Python/02_Programacao_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/alpha-f-box-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Fundamentos': "05_Python/03_Fundamentos_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/lightbulb-on-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Conceitos': "05_Python/04_Conceitos_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/call-split.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Controle de Fluxo': "05_Python/05_Controle_de_Fluxo_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/function-variant.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Funções': "05_Python/06_Funcoes_python/index.md"
+          - '<img src="https://api.iconify.design/mdi/library-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Módulos e Bibliotecas': "05_Python/07_Modulos_e_Bibliotecas_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/console-line.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Administração de Sistemas': "05_Python/08_Administracao_de_Sistemas_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/bug-check-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Depuração e Teste': "05_Python/09_Depuracao_e_Teste/index.md"
+          - '<img src="https://api.iconify.design/mdi/sync-circle.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> DevOps e Integração': "05_Python/10_Devops_Python_Integracao/index.md"
+          - '<img src="https://api.iconify.design/mdi/cogs.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciamento de Configuração': "05_Python/11_Gerenciamento_de_Configuracao_Python/index.md"
+          - '<img src="https://api.iconify.design/mdi/cloud-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Python na Nuvem': "05_Python/12_Python_na_Nuvem/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/language-python.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Python': "05_Python/labs/389_Lab_Python/index.md"
+          - 'Quiz conhecimentos Python': 'quizzes/quiz_python.md'
+
+  - '<img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Bancos de Dados':
+      - "Teoria":
+          - '<img src="https://api.iconify.design/mdi/database-arrow-right-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Introdução': "06_Bancos_de_Dados/01_Introducao_a_Banco_de_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Interação e Transações': "06_Bancos_de_Dados/02_Interacao_e_Transacoes_de_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/table-plus.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Criação de Tabelas': "06_Bancos_de_Dados/03_Criacao_de_Tabelas/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-import-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Inserir Dados': "06_Bancos_de_Dados/04_Inserir_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-search-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Selecionar Dados': "06_Bancos_de_Dados/05_Selecionar_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/table-sync.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Transações e Tabelas': "06_Bancos_de_Dados/06_Transacoes_e_Tabelas/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-marker-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Pesquisa Condicional': "06_Bancos_de_Dados/07_Pesquisa_Condicional/index.md"
+          - '<img src="https://api.iconify.design/mdi/function.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Trabalhar com Funções': "06_Bancos_de_Dados/08_Trabalhar_com_Funcoes/index.md"
+          - '<img src="https://api.iconify.design/mdi/sort-variant.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Organizar Dados': "06_Bancos_de_Dados/09_Organizar_Dados/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-export-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Recuperar Dados': "06_Bancos_de_Dados/10_Recuperar_Dados/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-rds.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon RDS': "06_Bancos_de_Dados/11_Amazon_RDS/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-dynamodb.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon DynamoDB': "06_Bancos_de_Dados/12_Amazon_DynamoDB/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-eye-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Tópicos Avançados': "06_Bancos_de_Dados/13_Banco_de_Dados_Avancado/index.md"
+      - "Laboratórios Práticos":
+          - '<img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Banco de Dados': "06_Bancos_de_Dados/labs/451_Lab_Banco_de_Dados/index.md"
+          - 'Quiz conhecimentos Banco de Dados': 'quizzes/quiz_banco.md'
+          - 'Quiz AWS Practitioner': 'quizzes/quiz_awsfinal.md'
+
+
+  - '<img src="https://api.iconify.design/mdi/rocket-launch-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Comece Já AWS':
+      - "Visão Geral": "07_Acelera_Desenvolvimento_AWS/index.md"
+  - '<img src="https://api.iconify.design/mdi/rocket-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Comece Já AWS Avançado':
+      - "Visão Geral": "08_Acelera_Desenvolvimento_AWS_Avancado/index.md"
+  - '<img src="https://api.iconify.design/mdi/school-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Preparação para Exames':
+      - "Visão Geral": "09_Preparacao_Exames/index.md"
+  - '<img src="https://api.iconify.design/mdi/robot-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> IA Avançado':
+      - "Visão Geral": "10_IA_Avancado/index.md"
+  - '<img src="https://api.iconify.design/mdi/bookmark-multiple-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Recursos Adicionais':
+      - "Guia de Certificação": "resources/certification-guide.md"
+      - "Dicas de Estudo": "resources/study-tips.md"
+      - "Glossário": "resources/glossary.md"
