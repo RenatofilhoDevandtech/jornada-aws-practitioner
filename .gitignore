@@ -1,2 +1,4 @@
 venv/
 semantic-commit.sh
+site/
+criar_docs_aws.sh
