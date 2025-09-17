@@ -1,1 +1,0 @@
-# Detalhes do Laboratório
