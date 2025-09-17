@@ -6,9 +6,8 @@ site_author: Renato Filho
 site_description: "Portfólio completo de estudos e laboratórios práticos para a certificação AWS Cloud Practitioner, desenvolvido no programa AWS re/Start."
 
 # Repositório
-repo_url: https://github.com/SEU_USUARIO/jornada-aws-practitioner
+repo_url: https://github.com/RenatofilhoDevandtech/jornada-aws-practitioner
 repo_name: GitHub
-edit_uri: edit/main/docs/
 
 # Copyright
 copyright: |
@@ -23,18 +22,22 @@ theme:
   language: pt
   logo: assets/logo-aws.png
   favicon: assets/logo-aws.png
+  display_version: true
+  repo_url: https://github.com/RenatofilhoDevandtech/jornada-aws-practitioner
+  repo_name: GitHub
+  repo_branch: main
+  repo_type: github
 
-  # Paleta "Synthwave" Futurista (Azul/Roxo)
   palette:
-    - scheme: slate # Modo escuro como padrão
-      primary: "indigo"
-      accent: "purple"
+    - scheme: slate
+      primary: indigo
+      accent: purple
       toggle:
         icon: material/weather-night
         name: Mudar para modo claro
     - scheme: default
-      primary: "indigo"
-      accent: "purple"
+      primary: indigo
+      accent: purple
       toggle:
         icon: material/weather-sunny
         name: Mudar para modo escuro
@@ -55,10 +58,11 @@ theme:
     - content.tooltips
     - toc.follow
 
-  # Barra de Anúncio no topo do site
   announcement_bar:
     content: |
-      <a href="https://linkedin.com/in/SEU_PERFIL" target="_blank">:fontawesome-brands-linkedin: Conecte-se comigo no LinkedIn!</a>
+      <a href="https://linkedin.com/in/renato-filho-devandtech" target="_blank">
+        <i class="fab fa-linkedin"></i> Conecte-se comigo no LinkedIn!
+      </a>
 
 # Plugins
 plugins:
@@ -68,17 +72,17 @@ plugins:
   - mkdocs_quiz:
       quiz_file: quizzes.json
       language: pt
-      show_score: true
-      show_progress_bar: true
-      show_indice_on_answer: true
-      show_refresh_button: true
+      # As opções abaixo foram comentadas pois não são reconhecidas oficialmente
+      # show_score: true
+      # show_progress_bar: true
+      # show_indice_on_answer: true
+      # show_refresh_button: true
 
 # Extensões do Markdown
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences:
-      # Habilita a criação de diagramas com Mermaid.js
       custom_fences:
         - name: mermaid
           class: mermaid
@@ -90,24 +94,21 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
-# Seção de extras
+# Extras
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/RenatofilhoDevandtech
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/renato-filho-devandtech
-
-# CSS/JS customizados
 extra_css:
   - css/extra.css
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
 
-# Navegação (Estrutura completa, organizada e com ícones)
+# Navegação (adicione seus itens aqui)
 nav:
   - '<img src="https://api.iconify.design/mdi/home.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Início': "index.md"
-
   - '<img src="https://api.iconify.design/mdi/cloud-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Fundamentos da Cloud':
       - "Teoria":
           - '<img src="https://api.iconify.design/mdi/compass-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral': "01_Cloud_Foundations/index.md"
@@ -126,11 +127,11 @@ nav:
       - "Laboratórios Práticos":
           - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Console AWS': "01_Cloud_Foundations/labs/09_Lab_Conhecendo_Console_Aws/index.md"
           - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab calculator': "01_Cloud_Foundations/labs/10_Lab_Estimativa_Gastos/index.md"
-          - '<img src="https://api.iconify.design/mdi/cloud-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab EC2': "01_Cloud_Foundations/labs/11_Lab_Amazon_EC2/index.md" 
+          - '<img src="https://api.iconify.design/mdi/cloud-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab EC2': "01_Cloud_Foundations/labs/11_Lab_Amazon_EC2/index.md"
           - '<img src="https://api.iconify.design/mdi/archive-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab S3': "01_Cloud_Foundations/labs/12_Lab_Amazon_S3/index.md"
           - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab IAM ': "01_Cloud_Foundations/labs/13_Lab_IAM/index.md"
           - '<img src="https://api.iconify.design/mdi/server.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Pensando como Arquiteto ': "01_Cloud_Foundations/labs/14_Lab_Pensando_como_Arquiteto/index.md"
-      - 'Quiz conhecimentos em Cloud': 'quizzes/quiz_cloud.md'
+      - "Quiz conhecimentos em Cloud": "quizzes/quiz_cloud.md"
 
   - '<img src="https://api.iconify.design/mdi/linux.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Linux':
       - "Teoria":
@@ -153,7 +154,7 @@ nav:
           - '<img src="https://api.iconify.design/mdi/console-line.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab Linha de Comando': "02_Linux/labs/02_Lab_Linha_de_Comando/index.md"
           - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab Detetive na Nuvem ': "02_Linux/labs/03_Lab_Detetive_Na_Nuvem/index.md"
           - '<img src="https://api.iconify.design/mdi/account-group-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> lab comando linux ': "02_Linux/labs/04_Lab_Comandos_Linux/index.md"
-          - 'Quiz conhecimentos em Linux': 'quizzes/quiz_linux.md'
+          - "Quiz conhecimentos em Linux": "quizzes/quiz_linux.md"
 
   - '<img src="https://api.iconify.design/mdi/lan.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Redes':
       - "Teoria":
@@ -168,7 +169,7 @@ nav:
       - "Laboratórios Práticos":
           - '<img src="https://api.iconify.design/mdi/ip-network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> IP Público/Privado': "03_Redes/labs/261_Lab_IP_Publico_Privado/index.md"
           - '<img src="https://api.iconify.design/mdi/web.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Criar VPC e WebServer': "03_Redes/labs/267_Lab_Criar_VPC_e_WebServer/index.md"
-          - 'Quiz conhecimentos em Redes': 'quizzes/quiz_redes.md'
+          - "Quiz conhecimentos em Redes": "quizzes/quiz_redes.md"
 
   - '<img src="https://api.iconify.design/mdi/shield-account-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Segurança':
       - "Teoria":
@@ -194,7 +195,7 @@ nav:
           - '<img src="https://api.iconify.design/mdi/security.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Recursos de Segurança': "04_Seguranca/20_Recursos_de_Seguranca_Aws/index.md"
       - "Laboratórios Práticos":
           - '<img src="https://api.iconify.design/mdi/shield-lock-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Segurança': "04_Seguranca/labs/335_Lab_Seguranca/index.md"
-          - 'Quiz conhecimentos em Segurança': 'quizzes/quiz_seguranca.md'
+          - "Quiz conhecimentos em Segurança": "quizzes/quiz_seguranca.md"
 
   - '<img src="https://api.iconify.design/mdi/language-python.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Python':
       - "Teoria":
@@ -212,7 +213,7 @@ nav:
           - '<img src="https://api.iconify.design/mdi/cloud-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Python na Nuvem': "05_Python/12_Python_na_Nuvem/index.md"
       - "Laboratórios Práticos":
           - '<img src="https://api.iconify.design/mdi/language-python.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Python': "05_Python/labs/389_Lab_Python/index.md"
-          - 'Quiz conhecimentos Python': 'quizzes/quiz_python.md'
+          - "Quiz conhecimentos Python": "quizzes/quiz_python.md"
 
   - '<img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Bancos de Dados':
       - "Teoria":
@@ -231,16 +232,119 @@ nav:
           - '<img src="https://api.iconify.design/mdi/database-eye-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Tópicos Avançados': "06_Bancos_de_Dados/13_Banco_de_Dados_Avancado/index.md"
       - "Laboratórios Práticos":
           - '<img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab Banco de Dados': "06_Bancos_de_Dados/labs/451_Lab_Banco_de_Dados/index.md"
-          - 'Quiz conhecimentos Banco de Dados': 'quizzes/quiz_banco.md'
-          - 'Quiz AWS Practitioner': 'quizzes/quiz_awsfinal.md'
-
+          - "Quiz conhecimentos Banco de Dados": "quizzes/quiz_banco.md"
+          - "Quiz AWS Practitioner": "quizzes/quiz_awsfinal.md"
 
   - '<img src="https://api.iconify.design/mdi/rocket-launch-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Comece Já AWS':
-      - "Visão Geral": "07_Acelera_Desenvolvimento_AWS/index.md"
+
+      - "Módulo 1: Frameworks e Operações":
+          - '<img src="https://api.iconify.design/mdi/lightbulb-on-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Pensamento Técnico na AWS': "07_Acelera_Desenvolvimento_AWS/1_Pensamento_Tecnico/index.md"
+          - '<img src="https://api.iconify.design/mdi/lightbulb-on-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Projetando seus conhecimentos': "07_Acelera_Desenvolvimento_AWS/2_Projete_Conhecimento/index.md"
+          - '<img src="https://api.iconify.design/mdi/lightbulb-on-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Cloud Adoption Framework': "07_Acelera_Desenvolvimento_AWS/01_CAF/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-well-architected.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Well-Architected Framework': "07_Acelera_Desenvolvimento_AWS/02_Well_Architected/index.md"
+          - '<img src="https://api.iconify.design/mdi/cogs.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Operações': "07_Acelera_Desenvolvimento_AWS/03_Operacoes_Sistema/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-iam.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS IAM': "07_Acelera_Desenvolvimento_AWS/04_IAM/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-cli.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS CLI': "07_Acelera_Desenvolvimento_AWS/05_CLI/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-systems-manager.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Systems Manager': "07_Acelera_Desenvolvimento_AWS/06_Systems_Manager/index.md"
+         
+      - "Módulo 2: Computação (Servidores)":
+          - '<img src="https://api.iconify.design/logos/aws-ec2.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Computação': "07_Acelera_Desenvolvimento_AWS/07_Computacao_Servidores/index.md"
+          - '<img src="https://api.iconify.design/mdi/cogs.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciando Instâncias AWS': "07_Acelera_Desenvolvimento_AWS/08_Gerenciar_Instancias/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-elastic-beanstalk.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Elastic Beanstalk': "07_Acelera_Desenvolvimento_AWS/09_Elastic_Beanstalk/index.md"
+
+      - "Módulo 3: Escalabilidade e Roteamento":
+          - '<img src="https://api.iconify.design/mdi/arrow-expand-all.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Escalabilidade': "07_Acelera_Desenvolvimento_AWS/10_Escalabilidade_geral/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-elb.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Elastic Load Balancing': "07_Acelera_Desenvolvimento_AWS/11_ELB/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-auto-scaling.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> EC2 Auto Scaling': "07_Acelera_Desenvolvimento_AWS/12_Auto_Scaling/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-route-53.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon Route 53': "07_Acelera_Desenvolvimento_AWS/13_Route53/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-cloudfront.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon CloudFront': "07_Acelera_Desenvolvimento_AWS/14_CloudFront/index.md"
+
+      - "Módulo 4: Computação (Serverless e Contêineres)":
+          - '<img src="https://api.iconify.design/mdi/server-off.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Serverless': "07_Acelera_Desenvolvimento_AWS/15_Serverless_Containers_geral/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-lambda.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Lambda': "07_Acelera_Desenvolvimento_AWS/16_Lambda/index.md"
+          - '<img src="https://api.iconify.design/mdi/api.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon API Gateway': "07_Acelera_Desenvolvimento_AWS/17_API_Gateway/index.md"
+          - '<img src="https://api.iconify.design/mdi/docker.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Contêineres na AWS': "07_Acelera_Desenvolvimento_AWS/18_Containers_AWS/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-step-functions.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Step Functions': "07_Acelera_Desenvolvimento_AWS/19_Step_Functions/index.md"
+
+      - "Módulo 5: Bancos de Dados":
+          - '<img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Bancos de Dados': "07_Acelera_Desenvolvimento_AWS/20_DB_geral/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-aurora.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon Aurora': "07_Acelera_Desenvolvimento_AWS/21_Aurora/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-redshift.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon Redshift': "07_Acelera_Desenvolvimento_AWS/22_Redshift/index.md"
+          - '<img src="https://api.iconify.design/mdi/database-sync-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Migração de Banco de Dados': "07_Acelera_Desenvolvimento_AWS/23_Migracao_DB/index.md"
+
+      - "Módulo 6: Redes":
+          - '<img src="https://api.iconify.design/mdi/lan.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Redes AWS': "07_Acelera_Desenvolvimento_AWS/24_Redes_AWS_geral/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-vpc.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon VPC e Conectividade': "07_Acelera_Desenvolvimento_AWS/25_VPC_Conectividade/index.md"
+          - '<img src="https://api.iconify.design/mdi/shield-network-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Segurança e Troubleshooting': "07_Acelera_Desenvolvimento_AWS/26_Seguranca_Rede/index.md"
+          
+
+      - "Módulo 7: Armazenamento":
+          - '<img src="https://api.iconify.design/mdi/archive-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Armazenamento': "07_Acelera_Desenvolvimento_AWS/27_Armazenamento_geral/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-ebs.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon EBS e Armazenamento de Instância': "07_Acelera_Desenvolvimento_AWS/28_EBS_Instance_Store/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-efs.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon EFS': "07_Acelera_Desenvolvimento_AWS/29_EFS/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-s3-glacier.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon S3 Glacier': "07_Acelera_Desenvolvimento_AWS/30_S3_Glacier/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-s3-glacier.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon S3 e CLI ': "07_Acelera_Desenvolvimento_AWS/34_S3/index.md"
+          - '<img src="https://api.iconify.design/logos/aws-storage-gateway.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Storage Gateway': "07_Acelera_Desenvolvimento_AWS/31_Storage_Gateway/index.md"
+          - '<img src="https://api.iconify.design/mdi/truck-delivery-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Serviços de Migração e Transferência': "07_Acelera_Desenvolvimento_AWS/32_Migracao_Transferencia/index.md"
+          - '<img src="https://api.iconify.design/mdi/truck-delivery-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Dicas de Branding Pessoal e Networking': "07_Acelera_Desenvolvimento_AWS/33_Vendas_e_Marketing/index.md"
+
+          - "Quiz AWS Practitioner": "quizzes/quiz_awsfinal.md"
+          - "Laboratórios Práticos":
+            - Lab Instalar e Configurar a AWS CLI: "07_Acelera_Desenvolvimento_AWS/labs/01_Lab_AWS_CLI/index.md"
+            - Lab Usar o Systems Manager: "07_Acelera_Desenvolvimento_AWS/labs/02_Lab_Systems_Manager/index.md"
+            - Lab Criando Instâncias EC2 : "07_Acelera_Desenvolvimento_AWS/labs/03_Lab_Criar_EC2/index.md"
+            - 'Lab [Desafio] Exercício de Instância EC2': "07_Acelera_Desenvolvimento_AWS/labs/04_Lab_Desafio_EC2/index.md"
+            - Lab Solucionar Problemas de Instância: "07_Acelera_Desenvolvimento_AWS/labs/05_Lab_Troubleshoot_EC2/index.md"
+            - Lab Dimensionar e Balancear Arquitetura: "07_Acelera_Desenvolvimento_AWS/labs/06_Lab_ELB_Scaling/index.md"
+            - 'Lab Usar Auto Scaling (Linux)': "07_Acelera_Desenvolvimento_AWS/labs/07_Lab_Autoscaling/index.md"
+            - Lab Roteamento de Failover com Route 53: "07_Acelera_Desenvolvimento_AWS/labs/08_Lab_Route53_Failover/index.md"
+            - Lab Trabalhar com AWS Lambda: "07_Acelera_Desenvolvimento_AWS/labs/09_Lab_Trabalhar_Lambda/index.md"
+            - 'Lab [Desafio] Exercício do AWS Lambda': "07_Acelera_Desenvolvimento_AWS/labs/10_Lab_Desafio_Lambda/index.md"
+            -  Lab Migrar para o Amazon RDS : "07_Acelera_Desenvolvimento_AWS/labs/11_Lab_Migrar_RDS/index.md"
+            -  Lab Configurar uma Amazon VPC: "07_Acelera_Desenvolvimento_AWS/labs/12_Lab_Configurar_VPC/index.md"
+            -  Lab Solucionar Problemas de VPC: "07_Acelera_Desenvolvimento_AWS/labs/13_Lab_Troubleshoot_VPC/index.md"
+            -  Lab Trabalhar com Amazon EBS: "07_Acelera_Desenvolvimento_AWS/labs/14_Lab_Trabalhar_EBS/index.md"
+            -  Lab Trabalhar com Amazon S3: "07_Acelera_Desenvolvimento_AWS/labs/15_Lab_Trabalhar_S3/index.md"
+            - 'Lab [Desafio] Exercício 1 de S3': "07_Acelera_Desenvolvimento_AWS/labs/16_Lab_Desafio_S3/index.md"
+            - 'Lab [Desafio] Exercício 2 de S3': "07_Acelera_Desenvolvimento_AWS/labs/18_Lab_Desafio2_S3/index.md"
+            - 'Lab Gerenaciar Arquivos e Armazenamento': "07_Acelera_Desenvolvimento_AWS/labs/17_Lab_Gerenciar_Arquivo/index.md"
+
   - '<img src="https://api.iconify.design/mdi/rocket-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Comece Já AWS Avançado':
-      - "Visão Geral": "08_Acelera_Desenvolvimento_AWS_Avancado/index.md"
+    - "Visão Geral": "08_Acelera_Desenvolvimento_AWS_Avancado/index.md"
+    - 'Módulo 1: Monitoramento e Segurança':
+      - '<img src="https://api.iconify.design/mdi/monitor-dashboard.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral': "08_Acelera_Desenvolvimento_AWS_Avancado/01_Monitoramento_Seguranca/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-cloudwatch.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Amazon CloudWatch': "08_Acelera_Desenvolvimento_AWS_Avancado/02_CloudWatch/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-cloudtrail.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS CloudTrail e Athena': "08_Acelera_Desenvolvimento_AWS_Avancado/03_CloudTrail_Athena/index.md"
+
+    - 'Módulo 2: Gerenciamento de Custos e Governança':
+      - '<img src="https://api.iconify.design/mdi/cash-multiple.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Visão Geral do Consumo': "08_Acelera_Desenvolvimento_AWS_Avancado/04_Gerenciamento_Consumo/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-organizations.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS Organizations': "08_Acelera_Desenvolvimento_AWS_Avancado/05_Organizations/index.md"
+      - '<img src="https://api.iconify.design/mdi/tag-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Estratégia de Marcação (Tags)': "08_Acelera_Desenvolvimento_AWS_Avancado/06_Tags/index.md"
+      - '<img src="https://api.iconify.design/mdi/face-agent.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Gerenciamento de Custos e Suporte': "08_Acelera_Desenvolvimento_AWS_Avancado/07_Custos_Suporte/index.md"
+
+    - 'Módulo 3: Automação e Infraestrutura como Código (IaC)':
+      - '<img src="https://api.iconify.design/mdi/robot-industrial-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Implantações Automatizadas': "08_Acelera_Desenvolvimento_AWS_Avancado/08_Deploy_Automatizado/index.md"
+      - '<img src="https://api.iconify.design/mdi/disc.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Estratégia de Construção de AMI': "08_Acelera_Desenvolvimento_AWS_Avancado/09_Estrategia_AMI/index.md"
+      - '<img src="https://api.iconify.design/mdi/clipboard-file-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Modelos de Lançamento EC2': "08_Acelera_Desenvolvimento_AWS_Avancado/10_Launch_Templates/index.md"
+      - '<img src="https://api.iconify.design/mdi/code-braces-box.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Infraestrutura como Código (JSON/YAML)': "08_Acelera_Desenvolvimento_AWS_Avancado/11_IaC_JSON_YAML/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-cloudformation.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> AWS CloudFormation': "08_Acelera_Desenvolvimento_AWS_Avancado/12_CloudFormation/index.md"
+
+    - 'Módulo 4: Preparação de Carreira':
+      - '<img src="https://api.iconify.design/mdi/account-tie-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Simulação de Entrevista': "08_Acelera_Desenvolvimento_AWS_Avancado/13_Simulacao_Entrevista/index.md"
+      - '<img src="https://api.iconify.design/mdi/file-find-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Exercício de Descoberta': "08_Acelera_Desenvolvimento_AWS_Avancado/14_Exercicio_Descoberta/index.md"
+
+    - 'Laboratórios Práticos':
+      - '<img src="https://api.iconify.design/logos/aws-cloudwatch.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Monitorar a Infraestrutura': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/01_Lab_Monitorar_Infra/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-cloudtrail.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Trabalhar com o AWS CloudTrail': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/02_Lab_CloudTrail/index.md"
+      - '<img src="https://api.iconify.design/mdi/tag-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Gerenciar Recursos com Marcação': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/03_Lab_Tags/index.md"
+      - '<img src="https://api.iconify.design/mdi/cash-sync.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Otimizar a Utilização': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/04_Lab_Otimizar_Custos/index.md"
+      - '<img src="https://api.iconify.design/logos/aws-cloudformation.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Automatizar com CloudFormation': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/05_Lab_CloudFormation/index.md"
+      - '<img src="https://api.iconify.design/mdi/bug-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab: Solucionar Problemas no CloudFormation': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/06_Lab_Troubleshoot_CFN/index.md"
+      - '<img src="https://api.iconify.design/mdi/puzzle-check-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Lab [Desafio]: CloudFormation': "08_Acelera_Desenvolvimento_AWS_Avancado/labs/07_Lab_Desafio_CFN/index.md"
+
   - '<img src="https://api.iconify.design/mdi/school-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Preparação para Exames':
-      - "Visão Geral": "09_Preparacao_Exames/index.md"
+    - "Visão Geral": "09_Preparacao_Exames/index.md"
+
   - '<img src="https://api.iconify.design/mdi/robot-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> IA Avançado':
       - "Visão Geral": "10_IA_Avancado/index.md"
   - '<img src="https://api.iconify.design/mdi/bookmark-multiple-outline.svg?color=currentColor" width="20" style="vertical-align:middle; margin-right:8px;" /> Recursos Adicionais':
