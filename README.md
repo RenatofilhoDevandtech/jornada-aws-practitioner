@@ -196,4 +196,4 @@ Estou em busca da minha primeira oportunidade para transformar esta base sólida
 
 Gostaria de trocar ideias, compartilhar conhecimento ou discutir oportunidades? Vamos nos conectar!
 
-* **LinkedIn:** `https://www.linkedin.com/in/seu-perfil-aqui/`
+* **LinkedIn:** `https://www.linkedin.com/in/renato-filho-devandtech`
