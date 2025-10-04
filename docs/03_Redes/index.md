@@ -1,4 +1,3 @@
-# Visão Geral do Módulo
 # <img src="https://api.iconify.design/mdi/lan.svg?color=currentColor" width="26" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Redes: As Estradas da Nuvem
 
 Nenhum serviço na nuvem, de uma instância EC2 a uma função Lambda, funciona sem uma rede por baixo. Se a computação é o "motor" e o armazenamento é a "garagem", a rede são as **"estradas, ruas e sinais de trânsito"** da sua cidade digital.

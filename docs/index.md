@@ -80,7 +80,7 @@ Navegue pelos módulos principais para começar sua jornada de aprendizado.
     <p>Automatize tarefas, analise dados e crie aplicações com Python. A linguagem que conecta desenvolvedores à nuvem.</p>
   </a>
 
-  <a href="./06_Banco_de_Dados/" class="card">
+  <a href="./06_Bancos_de_Dados/" class="card">
     <h3><img src="https://api.iconify.design/mdi/database-outline.svg?color=%2300ffe0" width="24" /> Banco de Dados na Nuvem</h3>
     <p>Gerencie dados com escalabilidade e alta disponibilidade. Explore soluções como RDS, DynamoDB e estratégias de arquitetura.</p>
   </a>

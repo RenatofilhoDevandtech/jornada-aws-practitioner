@@ -1,4 +1,3 @@
-# Visão Geral do Módulo
 # <img src="https://api.iconify.design/mdi/language-python.svg?color=currentColor" width="26" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Python: O Canivete Suíço da Automação na Nuvem
 
 Até agora, interagimos com a AWS através do Console (com cliques) e da CLI (com comandos). Agora, vamos conhecer a ferramenta que nos dá superpoderes: a **programação**.

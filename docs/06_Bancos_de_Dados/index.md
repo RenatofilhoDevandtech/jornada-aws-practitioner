@@ -1,4 +1,3 @@
-# Visão Geral do Módulo
 # <img src="https://api.iconify.design/mdi/database-outline.svg?color=currentColor" width="26" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Bancos de Dados: O Cérebro da sua Aplicação
 
 Uma aplicação sem um banco de dados tem amnésia. Ela não consegue se lembrar de quem são seus usuários, quais produtos estão no carrinho ou qual foi o último pedido. O banco de dados é a **memória persistente** da sua aplicação, o "cérebro" que guarda todas as informações importantes.

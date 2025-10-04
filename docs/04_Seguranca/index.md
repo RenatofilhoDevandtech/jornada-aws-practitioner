@@ -1,4 +1,3 @@
-# Visão Geral do Módulo
 # <img src="https://api.iconify.design/mdi/shield-lock-outline.svg?color=currentColor" width="26" style="vertical-align:middle; margin-right:8px;" /> Visão Geral de Segurança: Construindo sua Fortaleza na Nuvem
 
 Na nuvem, a segurança não é um recurso opcional; é a **fundação** sobre a qual tudo é construído. A boa notícia é que a AWS nos dá as ferramentas para criar uma infraestrutura que pode ser muito mais segura do que um data center tradicional. Mas, para isso, precisamos entender as regras do jogo.
