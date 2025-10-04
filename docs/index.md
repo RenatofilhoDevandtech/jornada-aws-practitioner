@@ -70,7 +70,7 @@ Navegue pelos módulos principais para começar sua jornada de aprendizado.
     <p>Entenda como os dados trafegam com segurança e velocidade. Aprenda a criar redes escaláveis com Amazon VPC e muito mais.</p>
   </a>
 
-  <a href="./04_Segurança" class="card"> 
+  <a href="./04_Seguranca/" class="card"> 
     <h3><img src="https://api.iconify.design/mdi/shield-account-outline.svg?color=%2300ffe0" width="24" /> Segurança na Nuvem</h3>
     <p>Proteja seus dados e aplicações com boas práticas, criptografia e monitoramento inteligente. Segurança é prioridade na nuvem.</p>
   </a>
