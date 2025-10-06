@@ -1,9 +1,5 @@
-<img width="1500" height="1500" alt="guia-estudo" src="https://github.com/user-attachments/assets/69964355-6462-46c2-bcab-6ff5bb2c847d" />
-
-
-
 <p align="center">
-  <img src="https://api.iconify.design/logos/aws.svg?color=currentColor" width="100" alt="AWS Logo">
+  <img src="https://api.iconify.design/logos/aws.svg?color=%238B5CF6" width="100" alt="AWS Logo">
 </p>
 
 <h1 align="center">Projeto Minha Jornada na AWS</h1>
@@ -13,13 +9,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified Cloud Practitioner">
-  <img src="https://img.shields.io/badge/Status-Concluído-4CAF50?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Status Concluído">
+  <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-8B5CF6?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified Cloud Practitioner">
+  <img src="https://img.shields.io/badge/Status-Concluído-3B82F6?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Status Concluído">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69964355-6462-46c2-bcab-6ff5bb2c847d" alt="guia-estudo" style="border-radius: 10px; width: 100%; max-width: 800px; margin-top: 20px; margin-bottom: 20px;">
 </p>
 
 ---
 
-### <img src="https://api.iconify.design/feather/target.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> O Projeto
+### <img src="https://api.iconify.design/feather/target.svg?color=%238B5CF6" width="22" style="vertical-align:middle; margin-right:8px;" /> O Projeto
 
 Este repositório é a resposta para a pergunta: "Como transformar conhecimento teórico em competência prática?". Ele documenta minha imersão de mais de 400 horas no programa **AWS re/Start**, onde cada conceito foi dissecado, aplicado em laboratórios práticos e, crucialmente, ensinado de volta através de guias detalhados.
 
@@ -30,7 +30,7 @@ Mais do que um simples registro de estudos, cada guia aqui foi construído com u
 
 ---
 
-### <img src="https://api.iconify.design/feather/brain.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Minha Metodologia de Aprendizado
+### <img src="https://api.iconify.design/feather/brain.svg?color=%233B82F6" width="22" style="vertical-align:middle; margin-right:8px;" /> Minha Metodologia de Aprendizado
 
 Este projeto foi construído sobre uma metodologia de aprendizado ativa e moderna.
 
@@ -42,7 +42,7 @@ Este projeto foi construído sobre uma metodologia de aprendizado ativa e modern
 
 ---
 
-### <img src="https://api.iconify.design/feather/award.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Competências em Foco
+### <img src="https://api.iconify.design/feather/award.svg?color=%238B5CF6" width="22" style="vertical-align:middle; margin-right:8px;" /> Competências em Foco
 
 Através dos laboratórios e guias deste projeto, eu demonstro competência prática nas seguintes áreas:
 
@@ -56,7 +56,7 @@ Através dos laboratórios e guias deste projeto, eu demonstro competência prá
 
 ---
 
-### <img src="https://api.iconify.design/feather/tool.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Stack de Tecnologias
+### <img src="https://api.iconify.design/feather/tool.svg?color=%233B82F6" width="22" style="vertical-align:middle; margin-right:8px;" /> Stack de Tecnologias
 
 #### Tecnologias AWS (O Foco):
 <p align="left">
@@ -88,7 +88,7 @@ Através dos laboratórios e guias deste projeto, eu demonstro competência prá
 
 ---
 
-### <img src="https://api.iconify.design/feather/map.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Estrutura da Jornada (Módulos de Estudo)
+### <img src="https://api.iconify.design/feather/map.svg?color=%238B5CF6" width="22" style="vertical-align:middle; margin-right:8px;" /> Estrutura da Jornada (Módulos de Estudo)
 
 <details>
 <summary><b>Clique aqui para ver o índice completo de todos os guias e laboratórios deste projeto.</b></summary>
@@ -96,95 +96,95 @@ Através dos laboratórios e guias deste projeto, eu demonstro competência prá
 ### ☁️ Módulo 1: Fundamentos da Nuvem
 Nesta fase inicial, construímos a base de conhecimento sólida necessária para qualquer profissional de tecnologia, cobrindo os pilares fundamentais da nuvem.
 * **Teoria:**
-    * Visão Geral da Nuvem
-    * Conceitos Básicos
-    * Funções de Uma Equipe de Nuvem
-    * Vantagens da Computação em Nuvem
-    * Infraestrutura Global da AWS e Serviços Essenciais (EC2, S3)
-    * Modelo de Responsabilidade Compartilhada
+  * Visão Geral da Nuvem
+  * Conceitos Básicos
+  * Funções de Uma Equipe de Nuvem
+  * Vantagens da Computação em Nuvem
+  * Infraestrutura Global da AWS e Serviços Essenciais (EC2, S3)
+  * Modelo de Responsabilidade Compartilhada
 * **Laboratórios Práticos:**
-    * Navegando no Console AWS
-    * Estimativa de Gastos com a Calculadora de Preços
-    * Lançando uma Instância EC2
-    * Trabalhando com Buckets S3
-    * Fundamentos de Segurança com IAM
-    * Pensando como um Arquiteto
+  * Navegando no Console AWS
+  * Estimativa de Gastos com a Calculadora de Preços
+  * Lançando uma Instância EC2
+  * Trabalhando com Buckets S3
+  * Fundamentos de Segurança com IAM
+  * Pensando como um Arquiteto
 
 ---
 ### 🐧 Módulo 2: Dominando o Linux
 Aqui, mergulhamos no sistema operacional que move a nuvem, aprendendo desde os comandos essenciais até a automação com scripts.
 * **Teoria:**
-    * Comandos Essenciais e Manipulação de Arquivos
-    * Gerenciamento de Usuários, Grupos e Permissões
-    * Gerenciamento de Processos, Serviços e Software
-    * Shell Bash e Criação de Scripts
+  * Comandos Essenciais e Manipulação de Arquivos
+  * Gerenciamento de Usuários, Grupos e Permissões
+  * Gerenciamento de Processos, Serviços e Software
+  * Shell Bash e Criação de Scripts
 * **Laboratórios Práticos:**
-    * Introdução à Linha de Comando
-    * Resolvendo Problemas como um "Detetive na Nuvem"
+  * Introdução à Linha de Comando
+  * Resolvendo Problemas como um "Detetive na Nuvem"
 
 ---
 ### 🌐 Módulo 3: Fundamentos de Redes
 Nesta fase, construímos o conhecimento sobre as "estradas" da internet e como criar nossa própria rede privada e segura na AWS.
 * **Teoria:**
-    * Conceitos de Redes e Protocolos de Internet
-    * A Fortaleza Digital: Amazon VPC
-    * Planejamento de Sub-redes e Endereçamento IP
+  * Conceitos de Redes e Protocolos de Internet
+  * A Fortaleza Digital: Amazon VPC
+  * Planejamento de Sub-redes e Endereçamento IP
 * **Laboratórios Práticos:**
-    * Configurando IP Público vs. Privado
-    * Criando uma VPC e um Servidor Web do Zero
+  * Configurando IP Público vs. Privado
+  * Criando uma VPC e um Servidor Web do Zero
 
 ---
 ### 🔒 Módulo 4: Segurança na Nuvem
 Um mergulho profundo no pilar mais importante da AWS, cobrindo o ciclo de vida da segurança: prevenção, detecção e resposta.
 * **Teoria:**
-    * O Ciclo de Vida da Segurança (Prevenção, Detecção, Resposta)
-    * Reforço de Segurança em Camadas: Rede, Sistema, Dados e Infraestrutura
-    * Gerenciamento de Identidade com AWS IAM
-    * Auditoria com AWS CloudTrail e AWS Config
-    * Análise de Vulnerabilidades com AWS Trusted Advisor
+  * O Ciclo de Vida da Segurança (Prevenção, Detecção, Resposta)
+  * Reforço de Segurança em Camadas: Rede, Sistema, Dados e Infraestrutura
+  * Gerenciamento de Identidade com AWS IAM
+  * Auditoria com AWS CloudTrail e AWS Config
+  * Análise de Vulnerabilidades com AWS Trusted Advisor
 * **Laboratórios Práticos:**
-    * Aplicando Conceitos de Segurança em um Ambiente Real
+  * Aplicando Conceitos de Segurança em um Ambiente Real
 
 ---
 ### 🐍 Módulo 5: Programação com Python
 Aprendemos a "falar a língua" da automação, desenvolvendo as habilidades para criar scripts e interagir com a nuvem de forma programática.
 * **Teoria:**
-    * Fundamentos da Linguagem Python
-    * Controle de Fluxo, Funções e Módulos
-    * Python para Administração de Sistemas e DevOps
-    * Depuração, Testes e Integração com a Nuvem
+  * Fundamentos da Linguagem Python
+  * Controle de Fluxo, Funções e Módulos
+  * Python para Administração de Sistemas e DevOps
+  * Depuração, Testes e Integração com a Nuvem
 * **Laboratórios Práticos:**
-    * Criando Scripts de Automação com Python
+  * Criando Scripts de Automação com Python
 
 ---
 ### 🗃️ Módulo 6: Bancos de Dados
 Exploramos como as aplicações armazenam e recuperam informações, desde os bancos de dados relacionais tradicionais até as soluções NoSQL modernas.
 * **Teoria:**
-    * Fundamentos de SQL: `CREATE`, `INSERT`, `SELECT`
-    * Organizando e Recuperando Dados
-    * Serviços Gerenciados: Amazon RDS (Relacional) e Amazon DynamoDB (NoSQL)
+  * Fundamentos de SQL: `CREATE`, `INSERT`, `SELECT`
+  * Organizando e Recuperando Dados
+  * Serviços Gerenciados: Amazon RDS (Relacional) e Amazon DynamoDB (NoSQL)
 * **Laboratórios Práticos:**
-    * Interagindo com um Banco de Dados SQL
+  * Interagindo com um Banco de Dados SQL
 
 ---
 ### 🚀 Módulo 7: Comece Já AWS (Jumpstart on AWS)
 Esta foi a nossa grande imersão, onde juntamos todo o conhecimento fundamental e o aplicamos para dominar os serviços e arquiteturas do mundo real.
 * **Módulos Teóricos:**
-    * Frameworks e Operações (Well-Architected, IAM, CLI, Systems Manager)
-    * Computação (EC2, Beanstalk, Escalabilidade, Roteamento, Serverless, Contêineres)
-    * Bancos de Dados (RDS, Aurora, Redshift, Migração)
-    * Redes (VPC, Conectividade, Segurança)
-    * Armazenamento (EBS, EFS, S3, Glacier)
-    * Monitoramento, Custos e Governança (CloudWatch, CloudTrail, Organizations, Budgets)
-    * Infraestrutura como Código (CloudFormation)
+  * Frameworks e Operações (Well-Architected, IAM, CLI, Systems Manager)
+  * Computação (EC2, Beanstalk, Escalabilidade, Roteamento, Serverless, Contêineres)
+  * Bancos de Dados (RDS, Aurora, Redshift, Migração)
+  * Redes (VPC, Conectividade, Segurança)
+  * Armazenamento (EBS, EFS, S3, Glacier)
+  * Monitoramento, Custos e Governança (CloudWatch, CloudTrail, Organizations, Budgets)
+  * Infraestrutura como Código (CloudFormation)
 * **Laboratórios Práticos:**
-    * Uma série de **17 laboratórios práticos**, incluindo 7 desafios, cobrindo desde a configuração da CLI até a construção de arquiteturas elásticas completas, migração de bancos de dados e troubleshooting de redes e automação.
+  * Uma série de **17 laboratórios práticos**, incluindo 7 desafios, cobrindo desde a configuração da CLI até a construção de arquiteturas elásticas completas, migração de bancos de dados e troubleshooting de redes e automação.
 
 </details>
 
 ---
 
-### <img src="https://api.iconify.design/feather/user.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Sobre Mim
+### <img src="https://api.iconify.design/feather/user.svg?color=%238B5CF6" width="22" style="vertical-align:middle; margin-right:8px;" /> Sobre Mim
 
 Meu nome é Renato. Sou um profissional movido pela curiosidade e pela busca de soluções eficientes para problemas complexos, e encontrei na computação em nuvem o campo perfeito para aplicar meu raciocínio lógico e construir soluções que causam impacto.
 
@@ -192,8 +192,12 @@ Após uma transição de carreira planejada, mergulhei de cabeça no programa AW
 
 Estou em busca da minha primeira oportunidade para transformar esta base sólida em valor real para uma equipe inovadora.
 
-### <img src="https://api.iconify.design/feather/send.svg?color=currentColor" width="22" style="vertical-align:middle; margin-right:8px;" /> Conecte-se Comigo
+### <img src="https://api.iconify.design/feather/send.svg?color=%233B82F6" width="22" style="vertical-align:middle; margin-right:8px;" /> Conecte-se Comigo
 
 Gostaria de trocar ideias, compartilhar conhecimento ou discutir oportunidades? Vamos nos conectar!
 
-* **LinkedIn:** `https://www.linkedin.com/in/renato-filho-devandtech`
+<p align="center">
+  <a href="https://www.linkedin.com/in/renato-filho-devandtech/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+</p>
